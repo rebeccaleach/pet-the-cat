@@ -21,24 +21,40 @@
         </header>
 
         <main>
-            <p>Cats are great. Petting cats is great. Now you pet cats virtually! Just enter the name of a cat you want to pet below to get started petting cats.</p>
+            <p>Cats are great. Petting cats is great. Now you can pet cats virtually! Just enter the name of a cat you want to pet below to get started petting cats.</p>
 
-            <input type="text" placeholder="Type your cat's name here and click 'Submit'"> <button type="submit">Submit</button>
+            <form action="/api/catname" method="post">
+
+                <input type="text" placeholder="Type your cat's name here and click 'Submit'"> 
+                <button type="submit">Submit</button>
+
+            </form>
 
             <div class="column-left">
 
                 <h2>Cats to Pet</h2>
 
-                <div class="cat">
-                    Luca
+                <div class="cat-container">
+                    <div class="cat">
+                        Luca
+                    </div>
+                    <button>Pet Cat</button>
                 </div>
+
+                <div class="cat-container">
                 <div class="cat">
                     Olive
                 </div>
+                <button>Pet Cat</button>
+                </div>
+
+                <div class="cat-container">
                 <div class="cat">
                     Margo
                 </div>
                 <button>Pet Cat</button>
+                </div>
+                
 
             </div>
 
