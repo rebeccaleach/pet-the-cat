@@ -8,4 +8,13 @@ var cat = function() {
 
 };
 
+var catModel = [
+	{
+		"id": 1,
+		"name": "Luca",
+		"petted": false,
+		"date": 
+	}
+]
+
 module.exports = cat;

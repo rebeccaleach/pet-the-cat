@@ -12,5 +12,7 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, '../public/index.html'));
 	});
 	// api routes
-	app.get('/api/')
+	app.get('/api/catname', function(req, res) {
+		res.json(friendsData);
+	});
 }
